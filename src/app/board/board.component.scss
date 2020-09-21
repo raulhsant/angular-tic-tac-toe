@@ -1,10 +1,25 @@
 main {
     display: grid;
-    grid-template-columns: 15em 15em 15em;
+    grid-template-columns: 15vh 15vh 15vh;
     grid-gap: 0px;
 }
 
 app-square {
     border: 1px gray solid;
-    height: 15em;
+    height: 15vh;
+}
+
+button {
+    margin-bottom: 2vh;
+    box-shadow: none !important;
+}
+
+.blink_me {
+    animation: blinker 1s linear infinite;
+}
+  
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
 }
